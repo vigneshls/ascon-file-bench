@@ -1,10 +1,10 @@
 Scheme,region,key,plaintext
-3DES-CBC,ciphertext,50.002,25.527
-"AES-128-GCM, AES-NI on",ciphertext+tag,50.017,0.78
-"AES-128-GCM, AES-NI on",tag_only,50.095,49.937
-"AES-256-CBC, AES-NI on",ciphertext,49.989,26.007
-Ascon-AEAD128 (proposed),ciphertext+tag,50.015,25.109
-Ascon-AEAD128 (proposed),tag_only,50.088,50.173
-Blowfish-CBC,ciphertext,49.975,25.024
-ChaCha20-Poly1305,ciphertext+tag,50.021,0.785
-ChaCha20-Poly1305,tag_only,49.851,50.231
+3DES-CBC,ciphertext,50.03,24.902
+"AES-128-GCM, AES-NI on",ciphertext+tag,49.967,0.78
+"AES-128-GCM, AES-NI on",tag_only,49.778,49.896
+"AES-256-CBC, AES-NI on",ciphertext,50.004,25.815
+Ascon-AEAD128 (proposed),ciphertext+tag,49.991,24.938
+Ascon-AEAD128 (proposed),tag_only,49.944,50.12
+Blowfish-CBC,ciphertext,50.009,24.855
+ChaCha20-Poly1305,ciphertext+tag,50.016,0.783
+ChaCha20-Poly1305,tag_only,49.96,50.145

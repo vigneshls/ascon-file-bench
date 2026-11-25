@@ -75,6 +75,9 @@ Disk use: the end-to-end test needs about 2 GB free at a time and deletes its fi
 
 ## Results in this repository
 
-`results/` holds the raw output of the full run reported in the manuscript: AMD Ryzen 5 5600H laptop,
-Windows 11 (build 26100), OpenSSL 3.5.9, on battery power, 25 November 2026. Regenerate every table and figure with
-`python analyze.py results`. `paper/references.bib` holds the verified references for the manuscript.
+- `results/` — the run reported in the manuscript: AMD Ryzen 5 5600H laptop on mains power, Windows 11 (build 26300),
+  GCC 16.2.0 (MSYS2 UCRT64, -O3 -march=native), OpenSSL 4.1.0, 25 November 2026.
+- `results_preliminary/` — an earlier run on battery power with an unrecorded Ascon build; kept for transparency
+  (Section 6.2 of the manuscript explains why it is not used).
+
+Regenerate every table and figure with `python analyze.py results`. `paper/references.bib` holds the verified references.

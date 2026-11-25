@@ -1,4 +1,4 @@
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe selftest
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe selftest
 KAT Ascon-AEAD128 PASS | Ascon-Hash256 PASS | Ascon-CXOF128 PASS
 round-trip ascon             PASS
 round-trip aes128gcm         PASS
@@ -7,7 +7,7 @@ round-trip aes256cbc         PASS
 round-trip 3des              PASS
 round-trip blowfish          PASS
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe tamper
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe tamper
 
 [ascon]
   clean file accepted              PASS (accepted)
@@ -66,7 +66,7 @@ $ C:\getitdone\research1\ascon-file-bench\build\bench.exe tamper
 AEAD schemes must detect every attack. CBC schemes have no integrity check:
 a 'detected' result for them only means the PKCS#7 padding check failed by chance.
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe speed C:\getitdone\research1\ascon-file-bench\results\speed.csv 30 10
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe speed C:/getitdone/research1/ascon-file-bench/results/speed.csv 30 10
 size 1024 bytes: 30 runs
   run 1/30 done
   run 2/30 done
@@ -240,7 +240,7 @@ size 524288000 bytes: 10 runs
   run 10/10 done
 
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe speed C:\getitdone\research1\ascon-file-bench\results\speed.csv 30 10 aes128gcm,aes256cbc   [{'OPENSSL_ia32cap': '~0x200000200000000'}]
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe speed C:/getitdone/research1/ascon-file-bench/results/speed.csv 30 10 aes128gcm,aes256cbc   [{'OPENSSL_ia32cap': '~0x200000200000000'}]
 size 1024 bytes: 30 runs
   run 1/30 done
   run 2/30 done
@@ -414,7 +414,7 @@ size 524288000 bytes: 10 runs
   run 10/10 done
 
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe chunk C:\getitdone\research1\ascon-file-bench\results\chunk.csv 30
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe chunk C:/getitdone/research1/ascon-file-bench/results/chunk.csv 30
   run 1/30 done
   run 2/30 done
   run 3/30 done
@@ -447,273 +447,273 @@ $ C:\getitdone\research1\ascon-file-bench\build\bench.exe chunk C:\getitdone\res
   run 30/30 done
 
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe keysetup C:\getitdone\research1\ascon-file-bench\results\keysetup.csv 10000
-ascon             key setup 2869.9 ns, expansion 0.02448%
-aes128gcm         key setup 5379.6 ns, expansion 0.02448%
-chacha20poly1305  key setup 4953.4 ns, expansion 0.02448%
-aes256cbc         key setup 5003.5 ns, expansion 0.00010%
-3des              key setup 5472.4 ns, expansion 0.00009%
-blowfish          key setup 35079.4 ns, expansion 0.00009%
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe keysetup C:/getitdone/research1/ascon-file-bench/results/keysetup.csv 10000
+ascon             key setup 964.8 ns, expansion 0.02448%
+aes128gcm         key setup 3889.5 ns, expansion 0.02448%
+chacha20poly1305  key setup 3908.1 ns, expansion 0.02448%
+aes256cbc         key setup 4047.6 ns, expansion 0.00010%
+3des              key setup 3427.3 ns, expansion 0.00009%
+blowfish          key setup 26102.6 ns, expansion 0.00009%
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe keysetup C:\getitdone\research1\ascon-file-bench\results\keysetup.csv 10000   [{'OPENSSL_ia32cap': '~0x200000200000000'}]
-ascon             key setup 1974.0 ns, expansion 0.02448%
-aes128gcm         key setup 7618.6 ns, expansion 0.02448%
-chacha20poly1305  key setup 6563.9 ns, expansion 0.02448%
-aes256cbc         key setup 7180.6 ns, expansion 0.00010%
-3des              key setup 6731.7 ns, expansion 0.00009%
-blowfish          key setup 36629.3 ns, expansion 0.00009%
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe keysetup C:/getitdone/research1/ascon-file-bench/results/keysetup.csv 10000   [{'OPENSSL_ia32cap': '~0x200000200000000'}]
+ascon             key setup 956.6 ns, expansion 0.02448%
+aes128gcm         key setup 4273.6 ns, expansion 0.02448%
+chacha20poly1305  key setup 4360.1 ns, expansion 0.02448%
+aes256cbc         key setup 4165.1 ns, expansion 0.00010%
+3des              key setup 4512.9 ns, expansion 0.00009%
+blowfish          key setup 26759.2 ns, expansion 0.00009%
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe aval C:\getitdone\research1\ascon-file-bench\results\avalanche.csv 1000
-ascon             plaintext flip: 25.11% of ciphertext bits changed (tag included)
-ascon             key       flip: 50.01% of ciphertext bits changed (tag included)
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe aval C:/getitdone/research1/ascon-file-bench/results/avalanche.csv 1000
+ascon             plaintext flip: 24.94% of ciphertext bits changed (tag included)
+ascon             key       flip: 49.99% of ciphertext bits changed (tag included)
 aes128gcm         plaintext flip: 0.78% of ciphertext bits changed (tag included)
-aes128gcm         key       flip: 50.02% of ciphertext bits changed (tag included)
+aes128gcm         key       flip: 49.97% of ciphertext bits changed (tag included)
 chacha20poly1305  plaintext flip: 0.78% of ciphertext bits changed (tag included)
 chacha20poly1305  key       flip: 50.02% of ciphertext bits changed (tag included)
-aes256cbc         plaintext flip: 26.01% of ciphertext bits changed
-aes256cbc         key       flip: 49.99% of ciphertext bits changed
-3des              plaintext flip: 25.53% of ciphertext bits changed
-3des              key       flip: 50.00% of ciphertext bits changed
-blowfish          plaintext flip: 25.02% of ciphertext bits changed
-blowfish          key       flip: 49.98% of ciphertext bits changed
+aes256cbc         plaintext flip: 25.82% of ciphertext bits changed
+aes256cbc         key       flip: 50.00% of ciphertext bits changed
+3des              plaintext flip: 24.90% of ciphertext bits changed
+3des              key       flip: 50.03% of ciphertext bits changed
+blowfish          plaintext flip: 24.86% of ciphertext bits changed
+blowfish          key       flip: 50.01% of ciphertext bits changed
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_100MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_100MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile ascon C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile ascon C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.enc C:\getitdone\research1\ascon-file-bench\tmp_files\ascon.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.enc C:/getitdone/research1/ascon-file-bench/tmp_files/ascon.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes128gcm C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes128gcm C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes128gcm.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes128gcm.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile chacha20poly1305 C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile chacha20poly1305 C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.enc C:\getitdone\research1\ascon-file-bench\tmp_files\chacha20poly1305.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.enc C:/getitdone/research1/ascon-file-bench/tmp_files/chacha20poly1305.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile aes256cbc C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile aes256cbc C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.enc C:\getitdone\research1\ascon-file-bench\tmp_files\aes256cbc.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.enc C:/getitdone/research1/ascon-file-bench/tmp_files/aes256cbc.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile 3des C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile 3des C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\3des.enc C:\getitdone\research1\ascon-file-bench\tmp_files\3des.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/3des.enc C:/getitdone/research1/ascon-file-bench/tmp_files/3des.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe encfile blowfish C:\getitdone\research1\ascon-file-bench\tmp_files\plain_500MB.bin C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe encfile blowfish C:/getitdone/research1/ascon-file-bench/tmp_files/plain_500MB.bin C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 
-$ C:\getitdone\research1\ascon-file-bench\build\bench.exe decfile C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.enc C:\getitdone\research1\ascon-file-bench\tmp_files\blowfish.dec C:\getitdone\research1\ascon-file-bench\results\e2e.csv
+$ C:/getitdone/research1/ascon-file-bench/build/bench.exe decfile C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.enc C:/getitdone/research1/ascon-file-bench/tmp_files/blowfish.dec C:/getitdone/research1/ascon-file-bench/results/e2e.csv
 

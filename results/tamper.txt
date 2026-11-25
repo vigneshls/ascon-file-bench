@@ -1,0 +1,57 @@
+
+[ascon]
+  clean file accepted              PASS (accepted)
+  ciphertext bit flipped           detected
+  chunks 2 and 3 swapped           detected
+  last chunk removed               detected
+  header file name edited          detected
+  chunk spliced from other file    detected
+  wrong master key                 detected
+
+[aes128gcm]
+  clean file accepted              PASS (accepted)
+  ciphertext bit flipped           detected
+  chunks 2 and 3 swapped           detected
+  last chunk removed               detected
+  header file name edited          detected
+  chunk spliced from other file    detected
+  wrong master key                 detected
+
+[chacha20poly1305]
+  clean file accepted              PASS (accepted)
+  ciphertext bit flipped           detected
+  chunks 2 and 3 swapped           detected
+  last chunk removed               detected
+  header file name edited          detected
+  chunk spliced from other file    detected
+  wrong master key                 detected
+
+[aes256cbc]
+  clean file accepted              PASS (accepted)
+  ciphertext bit flipped           NOT DETECTED
+  chunks 2 and 3 swapped           NOT DETECTED
+  last chunk removed               detected
+  header file name edited          NOT DETECTED
+  chunk spliced from other file    NOT DETECTED
+  wrong master key                 detected
+
+[3des]
+  clean file accepted              PASS (accepted)
+  ciphertext bit flipped           NOT DETECTED
+  chunks 2 and 3 swapped           NOT DETECTED
+  last chunk removed               detected
+  header file name edited          NOT DETECTED
+  chunk spliced from other file    NOT DETECTED
+  wrong master key                 detected
+
+[blowfish]
+  clean file accepted              PASS (accepted)
+  ciphertext bit flipped           NOT DETECTED
+  chunks 2 and 3 swapped           NOT DETECTED
+  last chunk removed               detected
+  header file name edited          NOT DETECTED
+  chunk spliced from other file    NOT DETECTED
+  wrong master key                 detected
+
+AEAD schemes must detect every attack. CBC schemes have no integrity check:
+a 'detected' result for them only means the PKCS#7 padding check failed by chance.

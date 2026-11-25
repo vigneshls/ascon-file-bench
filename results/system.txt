@@ -1,0 +1,10 @@
+date: 2026-11-25 13:11:19
+os: Windows-10-10.0.26100-SP0
+machine: AMD64
+processor: AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+python: 3.8.5
+cpu: unavailable ([WinError 2] The system cannot find the file specified)
+computersystem: unavailable ([WinError 2] The system cannot find the file specified)
+diskdrive: unavailable ([WinError 2] The system cannot find the file specified)
+openssl=OpenSSL 3.5.9 29 Sep 2026
+aesni=on

@@ -1,0 +1,9 @@
+Scheme,"Peak memory, streaming encrypt (MB)",Ciphertext expansion (%),Key setup (µs)
+Ascon-AEAD128 (proposed),8.07,0.02448,2.8699
+"AES-128-GCM, AES-NI on",8.28,0.02448,5.3796
+"AES-128-GCM, AES-NI off",,0.02448,7.618600000000001
+ChaCha20-Poly1305,8.28,0.02448,4.953399999999999
+"AES-256-CBC, AES-NI on",8.24,0.0001,5.0035
+"AES-256-CBC, AES-NI off",,0.0001,7.1806
+3DES-CBC,8.26,9e-05,5.4723999999999995
+Blowfish-CBC,8.27,9e-05,35.0794

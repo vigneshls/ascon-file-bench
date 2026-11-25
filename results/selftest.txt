@@ -1,0 +1,7 @@
+KAT Ascon-AEAD128 PASS | Ascon-Hash256 PASS | Ascon-CXOF128 PASS
+round-trip ascon             PASS
+round-trip aes128gcm         PASS
+round-trip chacha20poly1305  PASS
+round-trip aes256cbc         PASS
+round-trip 3des              PASS
+round-trip blowfish          PASS

@@ -1,0 +1,7 @@
+build/
+tmp_files/
+results_quick*/
+results_old_*/
+__pycache__/
+*.exe
+*.o

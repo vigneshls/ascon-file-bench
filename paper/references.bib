@@ -1,0 +1,227 @@
+% references.bib — Ascon file-encryption manuscript (Vignesh, Thanabal)
+% Every entry below was checked on 25 Nov 2026 against the publisher, DOI registry, dblp,
+% NIST CSRC or the official specification page.
+% Entries marked "COMPLETE IN MENDELEY" were confirmed to exist (title, first author, venue,
+% year) but their full author list / volume / pages / DOI were not retrieved: after importing,
+% use Mendeley's "Look up details" (search by title) to fill them, then check the result.
+
+% ---------------- Standards and specifications
+@techreport{nist800232,
+  author      = {S{\"o}nmez Turan, Meltem and McKay, Kerry A. and Kang, Jinkeon and Kelsey, John},
+  title       = {Ascon-Based Lightweight Cryptography Standards for Constrained Devices: Authenticated Encryption, Hash, and Extendable Output Functions},
+  institution = {National Institute of Standards and Technology},
+  type        = {NIST Special Publication},
+  number      = {800-232},
+  year        = {2025},
+  month       = aug,
+  doi         = {10.6028/NIST.SP.800-232},
+  note        = {CHECK author list against the final PDF title page (the draft also listed Donghoon Chang)}
+}
+
+@techreport{nistir8454,
+  author      = {S{\"o}nmez Turan, Meltem and McKay, Kerry and Chang, Donghoon and Bassham, Lawrence E. and Kang, Jinkeon and Waller, Noah D. and Kelsey, John M. and Hong, Deukjo},
+  title       = {Status Report on the Final Round of the {NIST} Lightweight Cryptography Standardization Process},
+  institution = {National Institute of Standards and Technology},
+  type        = {NIST Interagency/Internal Report},
+  number      = {8454},
+  year        = {2023},
+  doi         = {10.6028/NIST.IR.8454}
+}
+
+@techreport{nist800131ar2,
+  author      = {Barker, Elaine and Roginsky, Allen},
+  title       = {Transitioning the Use of Cryptographic Algorithms and Key Lengths},
+  institution = {National Institute of Standards and Technology},
+  type        = {NIST Special Publication},
+  number      = {800-131A Rev. 2},
+  year        = {2019},
+  doi         = {10.6028/NIST.SP.800-131Ar2}
+}
+
+@techreport{nist80038d,
+  author      = {Dworkin, Morris},
+  title       = {Recommendation for Block Cipher Modes of Operation: {Galois/Counter Mode (GCM)} and {GMAC}},
+  institution = {National Institute of Standards and Technology},
+  type        = {NIST Special Publication},
+  number      = {800-38D},
+  year        = {2007},
+  doi         = {10.6028/NIST.SP.800-38D}
+}
+
+@techreport{nist80038a,
+  author      = {Dworkin, Morris},
+  title       = {Recommendation for Block Cipher Modes of Operation: Methods and Techniques},
+  institution = {National Institute of Standards and Technology},
+  type        = {NIST Special Publication},
+  number      = {800-38A},
+  year        = {2001},
+  doi         = {10.6028/NIST.SP.800-38A}
+}
+
+@techreport{fips1804,
+  author      = {{National Institute of Standards and Technology}},
+  title       = {Secure Hash Standard ({SHS})},
+  institution = {National Institute of Standards and Technology},
+  type        = {Federal Information Processing Standards Publication},
+  number      = {180-4},
+  year        = {2015},
+  doi         = {10.6028/NIST.FIPS.180-4}
+}
+
+@misc{rfc8439,
+  author       = {Nir, Yoav and Langley, Adam},
+  title        = {{ChaCha20} and {Poly1305} for {IETF} Protocols},
+  howpublished = {RFC 8439},
+  publisher    = {Internet Engineering Task Force},
+  year         = {2018},
+  doi          = {10.17487/RFC8439}
+}
+
+@misc{rfc5869,
+  author       = {Krawczyk, Hugo and Eronen, Pasi},
+  title        = {{HMAC}-based Extract-and-Expand Key Derivation Function ({HKDF})},
+  howpublished = {RFC 5869},
+  publisher    = {Internet Engineering Task Force},
+  year         = {2010},
+  doi          = {10.17487/RFC5869}
+}
+
+@misc{age2024,
+  author       = {Valsorda, Filippo and {C2SP contributors}},
+  title        = {The age file encryption format, version 1},
+  howpublished = {\url{https://c2sp.org/age} (age-encryption.org/v1)},
+  note         = {Accessed 25 November 2026}
+}
+
+@misc{caesar2019,
+  author       = {{CAESAR Committee}},
+  title        = {{CAESAR}: Competition for Authenticated Encryption: Security, Applicability, and Robustness -- Final Portfolio},
+  howpublished = {\url{https://competitions.cr.yp.to/caesar-submissions.html}},
+  year         = {2019},
+  note         = {Final portfolio announced February 2019. Accessed 25 November 2026}
+}
+
+@misc{openssl_ia32cap,
+  author       = {{OpenSSL Project}},
+  title        = {{OPENSSL\_ia32cap} -- the x86[\_64] processor capabilities vector},
+  howpublished = {OpenSSL 3.5 manual page, \url{https://docs.openssl.org/3.5/man3/OPENSSL_ia32cap/}},
+  note         = {Accessed 25 November 2026}
+}
+
+% ---------------- Cryptography papers
+@article{dobraunig2021,
+  author  = {Dobraunig, Christoph and Eichlseder, Maria and Mendel, Florian and Schl{\"a}ffer, Martin},
+  title   = {Ascon v1.2: Lightweight Authenticated Encryption and Hashing},
+  journal = {Journal of Cryptology},
+  volume  = {34},
+  number  = {3},
+  pages   = {33},
+  year    = {2021},
+  doi     = {10.1007/s00145-021-09398-9}
+}
+
+@inproceedings{bhargavan2016,
+  author    = {Bhargavan, Karthikeyan and Leurent, Ga{\"e}tan},
+  title     = {On the Practical (In-)Security of 64-bit Block Ciphers: Collision Attacks on {HTTP} over {TLS} and {OpenVPN}},
+  booktitle = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security (CCS)},
+  pages     = {456--467},
+  year      = {2016},
+  publisher = {ACM},
+  doi       = {10.1145/2976749.2978423}
+}
+
+@inproceedings{vaudenay2002,
+  author    = {Vaudenay, Serge},
+  title     = {Security Flaws Induced by {CBC} Padding -- Applications to {SSL}, {IPSEC}, {WTLS}...},
+  booktitle = {Advances in Cryptology -- EUROCRYPT 2002},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {2332},
+  pages     = {534--546},
+  year      = {2002},
+  publisher = {Springer},
+  doi       = {10.1007/3-540-46035-7_35}
+}
+
+@inproceedings{hoang2015,
+  author    = {Hoang, Viet Tung and Reyhanitabar, Reza and Rogaway, Phillip and Viz{\'a}r, Damian},
+  title     = {Online Authenticated-Encryption and its Nonce-Reuse Misuse-Resistance},
+  booktitle = {Advances in Cryptology -- CRYPTO 2015, Part I},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9215},
+  pages     = {493--517},
+  year      = {2015},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-662-47989-6_24}
+}
+
+% ---------------- Ascon implementation studies
+@article{sarasa2025,
+  author  = {Sarasa Laborda, Ventura and Hern{\'a}ndez-{\'A}lvarez, Luis and Hern{\'a}ndez Encinas, Luis and S{\'a}nchez Garc{\'i}a, Jos{\'e} Ignacio and Queiruga-Dios, Araceli},
+  title   = {Study About the Performance of Ascon in Arduino Devices},
+  journal = {Applied Sciences},
+  volume  = {15},
+  number  = {7},
+  pages   = {4071},
+  year    = {2025},
+  doi     = {10.3390/app15074071}
+}
+
+@article{alharbi2024,
+  author  = {Alharbi, Adel R. and Aljaedi, Amer and Aljuhni, Abdullah and Alghuson, Moahd K. and Aldawood, Hussain and Jamal, Sajjad Shaukat},
+  title   = {Evaluating Ascon Hardware on 7-Series {FPGA} Devices},
+  journal = {IEEE Access},
+  volume  = {12},
+  pages   = {149076--149089},
+  year    = {2024},
+  doi     = {10.1109/ACCESS.2024.3471694}
+}
+
+@article{khan2024,
+  author  = {Khan, Safiullah and Inayat, Kashif and Muslim, Fahad Bin and Shah, Yasir Ali and Atif Ur Rehman, Muhammad and Khalid, Ayesha and Imran, Malik and Abdusalomov, Akmalbek},
+  title   = {Securing the {IoT} Ecosystem: {ASIC}-based Hardware Realization of {Ascon} Lightweight Cipher},
+  journal = {International Journal of Information Security},
+  year    = {2024},
+  doi     = {10.1007/s10207-024-00904-1},
+  note    = {COMPLETE IN MENDELEY: volume and pages}
+}
+
+% ---------------- Comparative cipher performance studies (COMPLETE IN MENDELEY)
+@article{buhari2025,
+  author  = {Buhari, Bello Alhaji and others},
+  title   = {Performance and Security Analysis of Symmetric Data Encryption Algorithms: {AES}, {3DES} and {Blowfish}},
+  journal = {International Journal of Advanced Networking and Applications},
+  year    = {2025},
+  note    = {COMPLETE IN MENDELEY: full authors, volume, pages, DOI. Java implementation; reports Blowfish faster than AES}
+}
+
+@article{radhi2023,
+  author  = {Radhi, Samara Mohammed and others},
+  title   = {In-Depth Assessment of Cryptographic Algorithms Namely {DES}, {3DES}, {AES}, {RSA}, and {Blowfish}},
+  journal = {Iraqi Journal of Computer, Communication, Control and System Engineering},
+  year    = {2023},
+  note    = {COMPLETE IN MENDELEY: full authors, volume, pages, DOI. Reports Blowfish fastest. CHECK the implementation language before citing it as Java-based}
+}
+
+@article{alabdulrazzaq2022,
+  author  = {Alabdulrazzaq, Haneen and others},
+  title   = {Performance Evaluation of Cryptographic Algorithms: {DES}, {3DES}, {Blowfish}, {Twofish}, and {Threefish}},
+  journal = {International Journal of Communication Networks and Information Security (IJCNIS)},
+  year    = {2022},
+  note    = {COMPLETE IN MENDELEY: full authors, volume, pages, DOI. Python implementation}
+}
+
+@inproceedings{dibas2021,
+  author    = {Dibas, Hasan and others},
+  title     = {A Comprehensive Performance Empirical Study of the Symmetric Algorithms: {AES}, {3DES}, {Blowfish} and {Twofish}},
+  booktitle = {2021 International Conference on Information Technology (ICIT)},
+  year      = {2021},
+  note      = {COMPLETE IN MENDELEY: full authors, pages, DOI. C\# (.NET) implementation; reports AES fastest}
+}
+
+@inproceedings{dinev2025,
+  author    = {Dinev, Diyan and others},
+  title     = {Benchmarking and Teaching Symmetric Cryptography: A Comparative Study of Algorithms and Cryptanalysis Methods with an Educational Simulator},
+  booktitle = {International Conference on Communications, Information, Electronic and Energy Systems (CIEES)},
+  year      = {2025},
+  note      = {COMPLETE IN MENDELEY: full authors, pages, DOI. Includes AES-GCM alongside CBC-mode ciphers}
+}
